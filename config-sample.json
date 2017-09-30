@@ -1,0 +1,42 @@
+{
+  "bridge": {
+    "name": "Homebridge",
+    "username": "CC:22:3D:E3:CE:30",
+    "port": 51826,
+    "pin": "031-45-154"
+  },
+  
+  "platforms": [
+  {
+    "platform" : "websocket",
+    "name" : "websocket",
+    "port": 4050
+	},
+
+	{
+		"platform" : "Neeo",
+    "neeoBrain": "neeo-hostname",
+    "scenes": [
+      {
+        "name": "evening",
+        "label": "Evening"
+      },
+      {
+        "name": "dinner-time",
+        "label": "Dinner Time"
+      },
+      {
+        "name": "watch-tv",
+        "label": "Watch TV"
+      },
+      {
+        "name": "movie-time",
+        "label": "Movie Time"
+      },
+      {
+        "name": "bedtime",
+        "label": "Bedtime"
+      }
+    ]
+	}]
+}
